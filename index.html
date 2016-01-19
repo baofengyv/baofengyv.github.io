@@ -1,1 +1,79 @@
-Hello Word
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>IT'S COLORFUL</title>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">
+    function go() {
+        $("td").each(function() {
+
+            var R = Math.floor(255 * Math.random());
+            var G = Math.floor(255 * Math.random());
+            var B = Math.floor(255 * Math.random());
+
+            $(this).css("background-color", "rgb(" + R + "," + G + "," + B + ")");
+        });
+    };
+    $(function() {
+        window.setInterval(go, 737);
+    });
+    </script>
+    <style type="text/css">
+    table {
+        margin: 113px auto;
+    }
+    
+    td {
+        height: 30px;
+        width: 45px;
+    }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
