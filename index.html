@@ -8,15 +8,25 @@
     function go() {
         $("td").each(function() {
 
-            var R = Math.floor(255 * Math.random());
-            var G = Math.floor(255 * Math.random());
-            var B = Math.floor(255 * Math.random());
+            var rTime = 0;
+            var _that = this;
+            var timer = setTimeout(run, rTime);
 
-            $(this).css("background-color", "rgb(" + R + "," + G + "," + B + ")");
+            function run() {
+                clearTimeout(timer);
+                var R = Math.floor(255 * Math.random());
+                var G = Math.floor(255 * Math.random());
+                var B = Math.floor(255 * Math.random());
+
+                $(_that).css("background-color", "rgb(" + R + "," + G + "," + B + ")");
+                rTime = Math.floor(1700 * Math.random());
+                timer = setTimeout(run, rTime);
+            }
         });
     };
     $(function() {
-        window.setInterval(go, 737);
+        // window.setInterval(go, 737);
+        go();
     });
     </script>
     <style type="text/css">
