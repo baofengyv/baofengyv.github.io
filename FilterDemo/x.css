@@ -1,0 +1,66 @@
+.blur{
+    -webkit-animation: blur 5s 0s infinite;
+}
+@-webkit-keyframes blur{
+    50%{ -webkit-filter: blur(13px); }
+}
+
+.brightness{
+    -webkit-animation: brightness 5s 0s infinite;
+}
+@-webkit-keyframes brightness{
+    50%{ -webkit-filter: brightness(2); }
+}
+
+.contrast{
+    -webkit-animation: contrast 5s 0s infinite;
+}
+@-webkit-keyframes contrast{
+    50%{ -webkit-filter: contrast(2); }
+}
+
+.grayscale{
+    -webkit-animation: grayscale 5s 0s infinite;
+}
+@-webkit-keyframes grayscale{
+    50%{ -webkit-filter: grayscale(1); }
+}
+
+.hue-rotate{
+    -webkit-animation: hue-rotate 5s 0s infinite;
+}
+@-webkit-keyframes hue-rotate{
+    50%{ -webkit-filter: hue-rotate(180deg); }
+}
+
+.invert{
+    -webkit-animation: invert 5s 0s infinite;
+}
+@-webkit-keyframes invert{
+    50%{ -webkit-filter: invert(1); }
+}
+
+.opacity{
+    -webkit-animation: opacity 5s 0s infinite;
+}
+@-webkit-keyframes opacity{
+    50%{ -webkit-filter: opacity(0); }
+}
+
+.saturate{
+    -webkit-animation: saturate 5s 0s infinite;
+}
+@-webkit-keyframes saturate{
+    50%{ -webkit-filter:saturate(0); }
+}
+
+.sepia{
+    -webkit-animation: sepia 5s 0s infinite;
+}
+@-webkit-keyframes sepia{
+    50%{ -webkit-filter: sepia(1); }
+}
+
+img {
+    width: 371px;
+}
