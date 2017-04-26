@@ -1,48 +1,50 @@
 <!doctype html>
 <html>
+
 <head>
     <title>IT'S COLORFUL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
-    window.onload = function() {
-        var tds = document.getElementsByTagName("td");
-        for (var i = 0; i < tds.length; ++i) {
-            go(tds[i]);
-        }
+        window.onload = function() {
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; ++i) {
+                go(tds[i]);
+            }
 
-        function go(x) {
+            function go(x) {
 
-            var rTime = 0;
-            var timer = setTimeout(run, rTime);
+                var rTime = 0;
+                var timer = setTimeout(run, rTime);
 
-            function run() {
+                function run() {
 
-                clearTimeout(timer);
-                var R = Math.floor(255 * Math.random());
-                var G = Math.floor(255 * Math.random());
-                var B = Math.floor(255 * Math.random());
+                    clearTimeout(timer);
+                    var R = Math.floor(255 * Math.random());
+                    var G = Math.floor(255 * Math.random());
+                    var B = Math.floor(255 * Math.random());
 
-                x.style.backgroundColor = "rgb(" + R + "," + G + "," + B + ")";
-                rTime = Math.floor(1997 * Math.random());
-                timer = setTimeout(run, rTime);
+                    x.style.backgroundColor = "rgb(" + R + "," + G + "," + B + ")";
+                    rTime = Math.floor(1997 * Math.random());
+                    timer = setTimeout(run, rTime);
+                }
             }
         }
-    }
     </script>
     <style type="text/css">
-    table {
-        margin: 113px auto;
-    }
-    
-    td {
-        height: 30px;
-        width: 45px;
-        transition: all .3s;
-    }
-    
-    p,h2 {
-        text-align: center;
-    }
+        table {
+            margin: 113px auto;
+        }
+        
+        td {
+            height: 30px;
+            width: 45px;
+            transition: all .3s;
+        }
+        
+        p,
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -100,22 +102,26 @@
     <p>
         <a href="http://sciencenetlinks.com/interactives/gravity.html">发射火箭的游戏</a>
     </p>
-	<h2>CSS</h2>
-	<p>
-		<a href="http://www.justinaguilar.com/animations/index.html">CSS 3 动画</a>
-	</p>
-	<p>
+    <h2>CSS</h2>
+    <p>
+        <a href="http://www.justinaguilar.com/animations/index.html">CSS 3 动画</a>
+    </p>
+    <p>
         <a href="http://www.w3cplus.com/css3/a-guide-to-flexbox.html">flexbox 属性讲解</a>
         <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">flexbox 属性讲解</a>
     </p>
-	<p>
+    <p>
         <a href="http://codepen.io/baofengyv/pen/eJKrEv">flex 水平 垂直 居中</a>
     </p>
-	<p>
+    <p>
         <a href="http://codepen.io/baofengyv/pen/jWKKPm">窄屏时自动隐藏左侧菜单</a>
     </p>
     <p>
         <a href=""></a>
+    </p>
+    <h2>Kindle DX(G)</h2>
+    <p>
+        <a href="./imager_For_Kindle_DX(G)">Kindle DX(G) images Zipper</a>
     </p>
 </body>
 
